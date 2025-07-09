@@ -1,0 +1,18 @@
+/kubejs errors
+/kubejs errors client
+/kubejs errors server
+/kubejs errors startup
+/kubejs reload
+/kubejs reload server-scripts
+/reload
+/kubejs errors
+/kubejs errors server
+/kubejs errors
+/kubejs errors server
+/kubejs errors
+/kubejs errors server
+/reload
+/kubejs errors server
+/reload
+/kubejs errors server
+/reload

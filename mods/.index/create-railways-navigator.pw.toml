@@ -1,0 +1,16 @@
+filename = 'createrailwaysnavigator-neoforge-1.21.1-beta-0.8.4.jar'
+name = 'Create Railways Navigator'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '195151d6374cc1e31b115140c096ea9b2747e68f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6693815
+project-id = 935929

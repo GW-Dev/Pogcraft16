@@ -1,0 +1,16 @@
+filename = 'modonomicon-1.21.1-neoforge-1.114.5.jar'
+name = 'Modonomicon'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '3417582beec9f52786646b7fb2c9b3ed1ccb87e2c9c60b71d0eb51b81aa57d5b53f7f8b1aaebe736dcda1e1e5443868f450e42af40590983f546f7b74bee316f'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/692GClaE/versions/lOyr6zzG/modonomicon-1.21.1-neoforge-1.114.5.jar'
+
+[update.modrinth]
+mod-id = '692GClaE'
+version = 'lOyr6zzG'
