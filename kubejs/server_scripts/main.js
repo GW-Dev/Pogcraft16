@@ -9,6 +9,26 @@ ServerEvents.recipes(event => {
   // You can modify as many recipes as you like in here,
   // without needing to use ServerEvents.recipes() again.
 
+  let ps = (id) => `pastel:${id}`
+  let cr = (id) => `create:${id}`
+  let mc = (id) => `minecraft:${id}`
+  let sp = (id) => `supplementaries:${id}`
+
+ // -- CUSTOM RECIPE UTILITY FUNCTION -- //
+    let mixing = (id, heat_requirement, item_inputs, item_outputs) => {
+        let newRecipe = {
+            type: cr('mixing'),
+            heatRequirement: heat_requirement,
+        }
+
+        if (item_inputs)
+            newRecipe['ingredients'] = item_inputs;
+        if (item_outputs)
+            newRecipe['results'] = item_outputs;
+
+        event.custom(newRecipe).id(id);
+    }
+
 event.shapeless(
   Item.of('bellsandwhistles:metro_window', 6), // arg 1: output
   [
@@ -17,15 +37,11 @@ event.shapeless(
   ]
 ).id("bellsandwhistles:metro_window")
 
-event.custom({
-  "type": "create:mixing",
-  "heat_requirement": "heated",
-  "ingredients": [{
-      "item": "create:pulp"
-    }],
-  "results": [{
-      "id": "supplementaries:ash"
-    }]
-})
+mixing(
+  "supplementaries:ash_from_pulp",
+  'heated',
+  [{item: cr('pulp')}],
+  [{id: sp('ash')}]
+)
   
 })
