@@ -1,0 +1,16 @@
+filename = 'inventoryessentials-neoforge-1.21.1-21.1.4.jar'
+name = 'Inventory Essentials'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'ec3350142ac822d6e03b7a16ab5d7ae35459f3cd270cb025bf9cd6109ed7861289310ed615c46aab4e11aaf587741df1b8a91bb08f8b16b841c93bcc7899dd24'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Boon8xwi/versions/ySoA0qVT/inventoryessentials-neoforge-1.21.1-21.1.4.jar'
+
+[update.modrinth]
+mod-id = 'Boon8xwi'
+version = 'ySoA0qVT'

@@ -1,0 +1,16 @@
+filename = 'databank-1.1.9.jar'
+name = 'Databank'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'de57bbcab8ee23013eb0a09a472bc713d6ce36fa3865c52a4010c18353751b1a09e108b00116b2bd786062f615e9ff1af14b47b479d3174fe5d91d4b998b5a29'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/2Ct0NAxj/versions/Ct5kvhSn/databank-1.1.9.jar'
+
+[update.modrinth]
+mod-id = '2Ct0NAxj'
+version = 'Ct5kvhSn'
