@@ -1,4 +1,4 @@
-filename = 'ftb-library-neoforge-2101.1.17.jar'
+filename = 'ftb-library-neoforge-2101.1.18.jar'
 name = 'FTB Library'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'ad4f38c2d68aabdca87783acef2f15f3a5ec8ea5'
+hash = '261ad9305ecf75cca15106ed39806334e2413367'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6798283
+file-id = 6807431
 project-id = 404465
