@@ -30,15 +30,18 @@ ServerEvents.recipes(event => {
         event.custom(newRecipe).id(id);
     }
 
+    event.remove({ id: cr('crushing/amethyst_block') })
+    
+    event.remove({ id: cr('crushing/amethyst_cluster') })
 
     // -- FLAX TO STRING -- //
     crushing(
         kj('flax_to_string'),
         200,
-        [ { count: 1, item: 'supplementaries:flax' } ],
+        [ { count: 1, item: sp('flax') } ],
         [
-            { count: 2, id: 'minecraft:string' },
-            { count: 1, id: 'minecraft:string', chance: 0.25 }
+            { count: 2, id: mc('string') },
+            { count: 1, id: mc('string'), chance: 0.25 }
         ]
     );
 

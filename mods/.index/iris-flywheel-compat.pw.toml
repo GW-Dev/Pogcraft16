@@ -1,0 +1,16 @@
+filename = 'iris-flywheel-compat-NeoForge-2.0.4.jar'
+name = 'Iris & Oculus Flywheel Compat'
+side = 'client'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '9dcadb5f3d2449c1c7965e0293b0f42dd23fed37'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6741450
+project-id = 659897

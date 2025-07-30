@@ -1,4 +1,4 @@
-filename = 'Pastel-1.1.2.jar'
+filename = 'Pastel-1.1.3.jar'
 name = 'Pastel'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '488466d6903954330f307895a3ac979e581761f3f13e451547779336cde6f006ba2b690b75454d3416b038818061b89c637cc8e6b45677de85afb9446fddc4a6'
+hash = 'de87a8fe2f6600d5738864994f9b2ac89912c1c1026c5f37ce9957abb0aa2dd2edd2d4a94e26a390c014e296db3ada34628a5a096d9f00f5274eb2b39cf41d39'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/5lr6fnw0/versions/xam3cSD8/Pastel-1.1.2.jar'
+url = 'https://cdn.modrinth.com/data/5lr6fnw0/versions/e3BMB0Oj/Pastel-1.1.3.jar'
 
 [update.modrinth]
 mod-id = '5lr6fnw0'
-version = 'xam3cSD8'
+version = 'e3BMB0Oj'

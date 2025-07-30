@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
     let mixing = (id, heat_requirement, item_inputs, item_outputs) => {
         let newRecipe = {
             type: cr('mixing'),
-            heatRequirement: heat_requirement,
+            heat_requirement: heat_requirement,
         }
 
         if (item_inputs)
@@ -38,7 +38,7 @@ event.shapeless(
 ).id("bellsandwhistles:metro_window")
 
 mixing(
-  "supplementaries:ash_from_pulp",
+  sp("ash_from_pulp"),
   'heated',
   [{item: cr('pulp')}],
   [{id: sp('ash')}]

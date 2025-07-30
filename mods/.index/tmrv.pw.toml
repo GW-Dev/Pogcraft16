@@ -1,16 +1,16 @@
-filename = 'toomanyrecipeviewers-0.6.0+mc.21.1.jar'
+filename = 'toomanyrecipeviewers-0.6.1+mc.21.1.jar'
 name = 'TooManyRecipeViewers'
-side = 'client'
+side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'c86776a993016927feb20f9bf82a1167c94e8249ad9c508b1e96e6a5b93b4e11e9a9cfe7eacc8069411fb419c70661757d231dd5c7a1a4f13eef2568da4e09e1'
+hash = '6ba85eb9e7568f74e1ea4b096c8bc939196aec3372fa06f8125b5aff21ed30786056a6d907e58a645db5c4758b79465c45e6b1a48a7b296ba23bc9a3fd628dbf'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/yFypjcfd/versions/168JTpBL/toomanyrecipeviewers-0.6.0%2Bmc.21.1.jar'
+url = 'https://cdn.modrinth.com/data/yFypjcfd/versions/fpW2kaHA/toomanyrecipeviewers-0.6.1%2Bmc.21.1.jar'
 
 [update.modrinth]
 mod-id = 'yFypjcfd'
-version = '168JTpBL'
+version = 'fpW2kaHA'

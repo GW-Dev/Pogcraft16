@@ -1,4 +1,4 @@
-filename = 'databank-1.2.0.1.jar'
+filename = 'databank-1.2.1.jar'
 name = 'Databank'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '35cefef077a93700dc8c1614a92df730d7629e43cf3bc2848265a1f8d754de2bd8aa9aab654aae85425108153cadcdaa3865a65ffffb45ec8be72620c484aa45'
+hash = '3be7367bad0a5af2a05cdb9edb7b2132ca69b6c2a54fb5344a47cb9fb7c36181811fcd865ad4135e496d94c740bff831420ab56ef16a8a02343a0211d4333fc5'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/2Ct0NAxj/versions/SybIr1WX/databank-1.2.0.1.jar'
+url = 'https://cdn.modrinth.com/data/2Ct0NAxj/versions/2kDubIl1/databank-1.2.1.jar'
 
 [update.modrinth]
 mod-id = '2Ct0NAxj'
-version = 'SybIr1WX'
+version = '2kDubIl1'
