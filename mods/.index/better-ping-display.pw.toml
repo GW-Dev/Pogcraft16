@@ -1,0 +1,16 @@
+filename = 'BetterPingDisplay-1.21.1-1.1.jar'
+name = 'Better Ping Display'
+side = 'client'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '66702459c2a87b9943af3347c4df1ae6ff14c897'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5936660
+project-id = 292038
