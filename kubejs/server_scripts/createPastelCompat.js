@@ -14,8 +14,9 @@ ServerEvents.recipes(event => {
     let mc = (id) => `minecraft:${id}`
     let sp = (id) => `supplementaries:${id}`
     let kj = (id) => `kubejs:${id}`
+    let fd = (id) => `farmersdelight:${id}`
 
-  // -- CUSTOM RECIPE UTILITY FUNCTION -- //
+  // -- CRUSHING RECIPE UTILITY FUNCTION -- //
     let crushing = (id, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: cr('crushing'),
@@ -26,6 +27,22 @@ ServerEvents.recipes(event => {
             newRecipe['ingredients'] = item_inputs;
         if (item_outputs)
             newRecipe['results'] = item_outputs;
+
+        event.custom(newRecipe).id(id);
+    }
+
+   // -- CUTTING RECIPE UTILITY FUNCTION -- //
+    let cutting = (id, item_inputs, item_outputs, tool) => {
+        let newRecipe = {
+            type: fd('cutting'),
+        }
+
+        if (item_inputs)
+            newRecipe['ingredients'] = item_inputs;
+        if (item_outputs)
+            newRecipe['result'] = item_outputs;
+        if (tool)
+            newRecipe['tool'] = tool;
 
         event.custom(newRecipe).id(id);
     }
@@ -45,7 +62,7 @@ ServerEvents.recipes(event => {
         ]
     );
 
-        // -- SPECTRUM POWDERS -- //
+        // -- PASTEL POWDERS -- //
     let gemRecipes = (gemName) => {
         const DATA = [
             { inputName: `${gemName}_shard`, outputAmount: 2 },
@@ -67,6 +84,18 @@ ServerEvents.recipes(event => {
         });
     }
 
+
+         // -- PASTEL SHARD BLOCK CUTTING -- //
+    let blockRecipes = (gemName) => {
+        let gemID =  (`${gemName}`).includes('amethyst') ? mc(gemName) : ps(gemName).concat('_block');
+        cutting(
+            kj(`${gemName}_shard_cut`),
+            [ {item: gemID } ],
+            [ { item: {count: 4, id: ps(`${gemName}_shard`) } } ],
+            [ { type: fd('item_ability'), action: 'pickaxe_dig' } ]
+        );
+    }
+
     const GEM_NAMES = [
         'amethyst',
         'citrine',
@@ -77,8 +106,10 @@ ServerEvents.recipes(event => {
 
     GEM_NAMES.forEach(name => {
         gemRecipes(name);
+        blockRecipes(name);
     });
     
+
 // -- QUITOXIC POWDER -- //
     crushing(
         kj('quitoxic_powder'),
