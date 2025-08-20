@@ -188,4 +188,12 @@ ServerEvents.recipes(event => {
     recipeForPsBudsAndClusters([ {in: "bismuth", out: ps("bismuth_crystal") } ], [2,2,5]);
     recipeForPsBudsAndClusters([ {in: "glowstone", out: mc("glowstone_dust") } ], [1,1,12]);
 
+    // -- PHANTOM MEMBRANE FROM ELYTRA -- //
+    cutting(
+        kj(`phantom_membrane_from_elytra`),
+        [ {item: mc('elytra') } ],
+        [ { item: {count: 1, id: mc('phantom_membrane') } } ],
+        [ { tag: "c:tools/knife" } ]
+    );
+
 })
